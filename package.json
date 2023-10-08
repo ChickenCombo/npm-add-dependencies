@@ -1,15 +1,15 @@
 {
   "name": "deps-no-install",
-  "version": "1.1.1",
-  "description": "Add dependencies (latest or specified versions) to the package.json file without installing them",
+  "version": "1.1.2",
+  "description": "Add dependencies (latest or specified versions) to the package.json file without installing them. (Original package by Arfeo, all credits goes to him.)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arfeo/npm-add-dependencies.git"
+    "url": "git+https://github.com/chickencombo/deps-no-install.git"
   },
   "bugs": {
-    "url": "https://github.com/arfeo/npm-add-dependencies/issues"
+    "url": "https://github.com/chickencombo/deps-no-install/issues"
   },
-  "homepage": "https://github.com/arfeo/npm-add-dependencies#readme",
+  "homepage": "https://github.com/chickencombo/deps-no-install#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +23,7 @@
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
-    "add-dependencies": "index.js"
+    "deps-no-install": "index.js"
   },
   "dependencies": {
     "npm-run": "^5.0.1",

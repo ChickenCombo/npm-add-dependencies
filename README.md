@@ -1,4 +1,4 @@
-# add-dependencies
+# deps-no-install
 
 This script adds dependencies (latest or specified versions) to the package.json file skipping the installation process.
 
@@ -7,7 +7,7 @@ This script adds dependencies (latest or specified versions) to the package.json
 If not using with `npx` (see below):
 
 ```sh
-$ npm install add-dependencies [-g]
+$ npm install deps-no-install [-g]
 ```
 
 ### Usage
@@ -15,13 +15,13 @@ $ npm install add-dependencies [-g]
 Run:
 
 ```sh
-$ add-dependencies [package_file] <dependencies> [target] [--no-overwrite]
+$ deps-no-install [package_file] <dependencies> [target] [--no-overwrite]
 ```
 
 or with `npx`:
 
 ```sh
-$ npx add-dependencies [package_file] <dependencies> [target] [--no-overwrite]
+$ npx deps-no-install [package_file] <dependencies> [target] [--no-overwrite]
 ```
 
 where `dependencies` is the list of dependencies divided by space, and `target` is one of the following:
@@ -38,11 +38,11 @@ Use `--no-overwrite` flag to prevent already existing packages in `package.json`
 Example:
 
 ```sh
-$ add-dependencies /home/user/project/package.json moment@2.0.0 react@16.8 redux eslint --dev
+$ deps-no-install /home/user/project/package.json moment@2.0.0 react@16.8 redux eslint --dev
 ```
 
 or with `npx`:
 
 ```sh
-$ npx add-dependencies /home/user/project/package.json moment@2.0.0 react@16.8 redux eslint --dev
+$ npx deps-no-install /home/user/project/package.json moment@2.0.0 react@16.8 redux eslint --dev
 ```
